@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+<head>
+  <title>geonwoo</title>
+  <meta charset="utf-8">
+    <style>
+      body{
+        background-color: black;
+        transition:all 1s;
+      }
+      a {
+        color:black;
+        text-decoration: none;
+      }
+      h1 {
+        font-size:50px;
+        text-align: center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:20px;
+
+        background-image: url('stars.gif');
+      }
+      ol{
+        border-right:1px solid gray;
+        width:150px;
+        padding-left:30px;
+        margin: 0;
+
+        list-style: none;
+      }
+      li{
+          list-style: none;
+      }
+      div{
+        padding-top: 40px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #article{
+        padding-left:60px;
+      }
+      @media(max-width:800px){
+        #grid{
+          display: block;
+        }
+           ol{
+            border-right:none;
+          }
+          h1 {
+              border-bottom:none;
+          }
+        }
+    </style>
+</head>
+<body onload="document.querySelector('body').style.backgroundColor='white';">
+  <h1><a href="index.html" style="color:white">White hacker and web hacking</a></h1>
+  <div id="grid">
+    <ol>
+      <p><li><a href="1.html">취약한 인증 공격</a></li></p>
+      <p><li><a href="2.html">SQL 인젝션 공격</a></li></p>
+      <p><li><a href="3.html">커맨드 인젝션 공격</a></li></p>
+      <p><li><a href="4.html">파일 업로드 공격</a></li></p>
+      <p><li><a href="5.html">CSRF 공격</a></li></p>
+    </ol>
+    <div id="article">
+      <h2>파일 업로드 공격</h2>
+      <h4>공격자는 웹 애플리케이션의 파일 업로드 기능을 이용하여 웹쉘이라고 하는 악성 파일을 업로드하고 시스템 명령을 실행. 파일 업로드 취약점은 파일을 업로드하는 기능에 적절한 보안 대책이 적용되어 있지 않을 때 발생한다. 파일 업로드 기능의 예로는, 게시판에 파일을 첨부하거나, 사용자 프로필에 사진을 업로드하는 것 등이 있다.</h4>
+      <h2>파일 업로드 공격 대응</h2>
+      <h4>1. 꼭 필요한 파일 형식만 업로드되도록 파일의 확장자와 내용을 검사한다. 파일의 확장자만 검사하는 경우, 파일의 실제 내용을 확장자와 다르게 전송함으로써 우회할 수 있으니 파일의 내용까지 일부 검사하여 파일의 종류를 확실하게 검사해야 한다.</h4>
+      <li><h4>2. 업로드된 파일을 사용자가 접근 불가능한 경로에 저장한다. 파일 업로드를 위한 별도의 서버를 구축하고 웹 애플리케이션을 서비스하는 서버와 완전히 분리하는 것도 좋다.<h4></li><h4>3. 파일이 업로드되는 디렉터리의 실행 권한을 제거한다.</h4
+      <li><h4>4. 업로드된 파일을 다른 확장자로 변경한다. 예를 들어, 실습에서 사용된 php 확장자 파일의  php 확장자를 제거하거나 변경하여 저장하면, 해당 파일의 경로를 접속하더라도 php 코드가 실행되지 않도록 할 수 있다.</h4></li><h4>5. 업로드된 파일의 이름을 랜덤하게 재생성하여 저장한다. 공격자가 자신이 업로드한 파일의 경로를 추측하지 못하도록 한다.</h4>
+      <h3>그런데 웹 애플리케이션에 파일 인클루전 취약점이 존재하면 일부 대응 방법을 우회할 수 있다.</h3>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <title>geonwoo</title>
+  <meta charset="utf-8">
+    <style>
+      body{
+        background-color: black;
+        transition:all 1s;
+      }
+      a {
+        color:black;
+        text-decoration: none;
+      }
+      h1 {
+        font-size:50px;
+        text-align: center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:20px;
+
+        background-image: url('stars.gif');
+      }
+      ol{
+        border-right:1px solid gray;
+        width:150px;
+        padding-left:30px;
+        margin: 0;
+
+        list-style: none;
+      }
+      li{
+          list-style: none;
+      }
+      div{
+        padding-top: 40px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #article{
+        padding-left:60px;
+      }
+      @media(max-width:800px){
+        #grid{
+          display: block;
+        }
+           ol{
+            border-right:none;
+          }
+          h1 {
+              border-bottom:none;
+          }
+        }
+    </style>
+</head>
+<body onload="document.querySelector('body').style.backgroundColor='white';">
+  <h1><a href="index.html" style="color:white">White hacker and web hacking</a></h1>
+  <div id="grid">
+    <ol>
+      <p><li><a href="1.html">취약한 인증 공격</a></li></p>
+      <p><li><a href="2.html">SQL 인젝션 공격</a></li></p>
+      <p><li><a href="3.html">커맨드 인젝션 공격</a></li></p>
+      <p><li><a href="4.html">파일 업로드 공격</a></li></p>
+      <p><li><a href="5.html">CSRF 공격</a></li></p>
+    </ol>
+    <div id="article">
+      <h2>커맨드 인젝션 공격</h2>
+      <h4>SQL 인젝션 공격과 더불어 인젝션 리스크와 관련된 주요 공격 기법.
+      <li>커맨드 인젝션은 명령어를 삽입한다는 뜻으로, 웹 요청 메세지에 임의의 시스템 명령어를 삽입하고 전송하여 웹 서버에서 해당 명령어를 실행하도록 하는 공격이다.</li></h4>
+      <h2>커맨드 인젝션 공격 대응</h2><li><h4>직접적으로 시스템 명령어를 호출하지 않는 것이다. 시스템 명령어를 사용할 수밖에 없는 경우에는 사용자 입력값이 명령어에서 사용될 수 없도록 확실히 점검해야 한다.<h4></li>
+      <h4>적절한 입력값 검증으로도 커맨드 인젝션 공격으로부터 보호할 수 있다. 블랙리스트 검증으로도 어느 정도 차단이 가능하지만 가급적 화이트리스트 검증 방식을 사용할 것을 권장한다.</h4>
+    </div>
+  </div>
+</body>
+</html>

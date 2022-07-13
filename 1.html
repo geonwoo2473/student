@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+  <title>geonwoo</title>
+  <meta charset="utf-8">
+    <style>
+      body{
+        background-color: black;
+        transition:all 1s;
+      }
+      a {
+        color:black;
+        text-decoration: none;
+      }
+      h1 {
+        font-size:50px;
+        text-align: center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:20px;
+
+        background-image: url('stars.gif');
+      }
+      ol{
+        border-right:1px solid gray;
+        width:150px;
+        padding-left:30px;
+        margin: 0;
+
+        list-style: none;
+      }
+      div{
+        padding-top: 40px;
+      }
+      li{
+          list-style: none;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #article{
+        padding-left:60px;
+      }
+      #font2{
+        font-family: 'Indie Flower', cursive;
+      }
+      @media(max-width:800px){
+        #grid{
+          display: block;
+        }
+           ol{
+            border-right:none;
+          }
+          h1 {
+              border-bottom:none;
+          }
+        }
+    </style>
+</head>
+<body onload="document.querySelector('body').style.backgroundColor='white';">
+  <h1><a href="index.html" style="color:white">White hacker and web hacking</a></h1>
+  <div id="grid">
+    <ol>
+      <p><li><a href="1.html">취약한 인증 공격</a></li></p>
+      <p><li><a href="2.html">SQL 인젝션 공격</a></li></p>
+      <p><li><a href="3.html">커맨드 인젝션 공격</a></li></p>
+      <p><li><a href="4.html">파일 업로드 공격</a></li></p>
+      <p><li><a href="5.html">CSRF 공격</a></li></p>
+    </ol>
+    <div id="article">
+      <h2>취약한 인증 공격-<a href="1-1.html" style="color:green">브루트 포스 공격</a></h2>
+      <h4><li>특정 정보를 알아내기 위한 공격.</li>패스워드 크래킹을 위해 사용하기도 하며, 웹 애플리케이션을 대상으로는 로그인에 필요한 사용자 패스워드를 알아내고자 할 때 사용할 수 있다. </h4>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+  <title>geonwoo</title>
+  <meta charset="utf-8">
+    <style>
+      body{
+        background-color: black;
+        transition:all 1s;
+
+      }
+      a {
+        color:black;
+        text-decoration: none;
+      }
+      h1 {
+        font-size:50px;
+        text-align: center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:20px;
+
+        background-image: url('stars.gif');
+      }
+      ol{
+        border-right:1px solid gray;
+        width:150px;
+        padding-left:30px;
+        margin: 0;
+
+        list-style: none;
+      }
+      div{
+        padding-top: 40px;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #article{
+        padding-left:60px;
+      }
+      #font2{
+        font-family: 'Indie Flower', cursive;
+      }
+      @media(max-width:800px){
+        #grid{
+          display: block;
+        }
+           ol{
+            border-right:none;
+          }
+          h1 {
+              border-bottom:none;
+          }
+        }
+    </style>
+</head>
+<body onload="document.querySelector('body').style.backgroundColor='white';">
+  <h1><a href="index.html" style="color:white">가평고 3-7</a></h1>
+  <div id="grid">
+    <ol>
+      <p><li><a href="1.html">A</a></li></p>
+      <p><li><a href="2.html">B</a></li></p>
+      <p><li><a href="3.html">C</a></li></p>
+      <p><li><a href="4.html">D</a></li></p>
+      <p><li><a href="5.html">E</a></li></p>
+    </ol>
+    <div id="article">
+      <h2><a href="index-1.html">CC</a></h2>
+      <h4 id="font2">MM</h4>
+      <iframe width="560" height="315" src="https://youtu.be/Ww147bBSIfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <title>geonwoo</title>
+  <meta charset="utf-8">
+    <style>
+      body{
+        background-color: black;
+        transition:all 1s;
+      }
+      a {
+        color:black;
+        text-decoration: none;
+      }
+      h1 {
+        font-size:50px;
+        text-align: center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:20px;
+
+        background-image: url('stars.gif');
+      }
+      ol{
+        border-right:1px solid gray;
+        width:150px;
+        padding-left:30px;
+        margin: 0;
+
+        list-style: none;
+      }
+      div{
+        padding-top: 40px;
+      }
+      li{
+          list-style: none;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #article{
+        padding-left:60px;
+      }
+      @media(max-width:800px){
+        #grid{
+          display: block;
+        }
+           ol{
+            border-right:none;
+          }
+          h1 {
+              border-bottom:none;
+          }
+        }
+    </style>
+</head>
+<body onload="document.querySelector('body').style.backgroundColor='white';">
+  <h1><a href="index.html" style="color:white">White hacker and web hacking</a></h1>
+  <div id="grid">
+    <ol>
+      <p><li><a href="1-1.html">브루스 포스 공격</a></li></p>
+    </ol>
+    <div id="article">
+      <h2>캡차(CAPTCHA)</h2>
+      <h3><li>자동화된 프로그램은 알아내기 불가능하지만 사람은 식별할 수 있는 문자나 그림을 이용함으로써 실제 로그인 시도가 사람이 시도하는 것임을 확인하는 것이다.</li></h3>
+      <img src="captcha.jpg"
+    </div>
+  </div>
+</body>
+</html>

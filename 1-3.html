@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+  <title>geonwoo</title>
+  <meta charset="utf-8">
+    <style>
+      body{
+        background-color: black;
+        transition:all 1s;
+      }
+      a {
+        color:black;
+        text-decoration: none;
+      }
+      h1 {
+        font-size:50px;
+        text-align: center;
+        border-bottom:1px solid gray;
+        margin:0;
+        padding:20px;
+
+        background-image: url('stars.gif');
+      }
+      ol{
+        border-right:1px solid gray;
+        width:150px;
+        padding-left:30px;
+        margin: 0;
+
+        list-style: none;
+      }
+      div{
+        padding-top: 40px;
+      }
+      li{
+          list-style: none;
+      }
+      #grid{
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      #article{
+        padding-left:60px;
+      }
+      @media(max-width:800px){
+        #grid{
+          display: block;
+        }
+           ol{
+            border-right:none;
+          }
+          h1 {
+              border-bottom:none;
+          }
+        }
+    </style>
+</head>
+<body onload="document.querySelector('body').style.backgroundColor='white';">
+  <h1><a href="index.html" style="color:white">White hacker and web hacking</a></h1>
+  <div id="grid">
+    <ol>
+      <p><li><a href="1-1.html">브루스 포스 공격</a></li></p>
+    </ol>
+    <div id="article">
+      <h2>락킹(locking)</h2>
+      <h3><li>이 방법을 사용하면 로그인 시도 간격이 길어져서 패스워드를 찾는 데 걸리는 시간이 거의 무한하게 늘어나기 때문에 브루트 포스 공격을 차단할 수 있다.</li><li>공격자가 오히려 이 점을 노리고 특정 사용자의 아이디를 사용하여 일부러 틀린 패스워드로 로그인을 여러 번 시도함으로써 그 사용자가 웹사이트를 사용하지 못하게 만들 수도 있다. 따라서 락킹을 적용할 때는 신중을 기해야 한다.</li></h3>
+    </div>
+  </div>
+</body>
+</html>
